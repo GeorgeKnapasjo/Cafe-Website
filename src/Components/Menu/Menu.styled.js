@@ -7,10 +7,12 @@ export const MenuWrapper = styled.div`
 export const MenuContainer = styled.div`
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Raleway', sans-serif;
+    margin:auto;
     margin-top:3rem;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    width:70vw;
     h1{
         width:100vw;
         text-align:center;
@@ -24,7 +26,7 @@ export const MenuItem = styled.div`
     margin-right:auto;
     color:#242934;
     padding:1rem;
-    width:40vw;
+    width:25vw;
     text-align:center;
     h2{
         padding-bottom:1rem;

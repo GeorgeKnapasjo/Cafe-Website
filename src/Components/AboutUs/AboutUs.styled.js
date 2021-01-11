@@ -3,6 +3,9 @@ import styled from 'styled-components/macro';
 export const AboutUsWrapper = styled.div`
     display:flex;
     margin-top:5rem;
+    width:75vw;
+    margin:auto;
+    margin-top:5rem;
 `;
 
 export const AboutUsContainer = styled.div`
