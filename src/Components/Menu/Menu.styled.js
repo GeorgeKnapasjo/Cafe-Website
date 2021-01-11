@@ -5,8 +5,8 @@ export const MenuWrapper = styled.div`
 `;
 
 export const MenuContainer = styled.div`
-font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin-top:3rem;
     display:flex;
     flex-direction:row;
@@ -24,7 +24,7 @@ export const MenuItem = styled.div`
     margin-right:auto;
     color:#242934;
     padding:1rem;
-    width:50vw;
+    width:40vw;
     text-align:center;
     h2{
         padding-bottom:1rem;
@@ -51,6 +51,10 @@ export const MenuItem = styled.div`
                 left: 50%;
                 display: block; 
         }
+    }
+    :hover{
+        border: 1px solid #dee3e5;
+        box-shadow: 0 2px 4px 2px #dee3e5;
     }
 `;
 
