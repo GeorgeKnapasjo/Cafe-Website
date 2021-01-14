@@ -57,6 +57,7 @@ export const MenuItem = styled.div`
     :hover{
         border: 1px solid #dee3e5;
         box-shadow: 0 2px 4px 2px #dee3e5;
+        cursor:pointer;
     }
 `;
 

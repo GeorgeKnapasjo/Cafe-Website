@@ -5,7 +5,7 @@ export const AboutUsWrapper = styled.div`
     margin-top:5rem;
     width:75vw;
     margin:auto;
-    margin-top:5rem;
+    margin-top:10rem;
 `;
 
 export const AboutUsContainer = styled.div`
@@ -18,5 +18,7 @@ export const AboutUsContainer = styled.div`
         padding-left:6rem;
         padding-right:6rem;
         line-height:2.5;
+        max-width:1000px;
     }
+
 `;
