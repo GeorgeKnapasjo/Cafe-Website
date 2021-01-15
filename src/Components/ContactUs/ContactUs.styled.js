@@ -28,9 +28,9 @@ Form{
     border: 1px solid #dee3e5;
     box-shadow: 0 0 4px 2px #dee3e5;
     margin-bottom:10rem;
+    background: ${props => props.disabled ? '#e9ecef' : 'white'};
+
 }
-
-
 `;
 
 export const LoadingSpinnerWrapper = styled.div`
