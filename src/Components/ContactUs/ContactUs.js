@@ -1,14 +1,18 @@
 import React, {useState} from 'react';
-import { FormContainer, FormWrapper } from './ContactUs.styled';
+import { FormContainer, FormWrapper, LoadingSpinnerContainer, LoadingSpinnerWrapper } from './ContactUs.styled';
 import {Button, Form} from 'react-bootstrap';
 import emailJs from 'emailjs-com';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
 const ContactUs = () => {
     const [name,setName] = useState('');
     const [message, setMessage] = useState('');
     const [email,setEmail] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [form, setForm] = useState(true);
 
     const sendEmail = (e) => {
+        setLoading(true);
         const emailFormat = {name, message, email}
         e.preventDefault();
         console.log(e.target)
@@ -18,17 +22,27 @@ const ContactUs = () => {
             setName('');
             setEmail('');
             setMessage('');
+            setForm(false);
+            setLoading(false);
         }, (error)=>{
             console.log('failed', error)
         });
 
     }
+
     return (
         <FormWrapper>
         <FormContainer>
             <h1>Contact Us</h1>
-
-            <Form onSubmit={sendEmail}>
+            <Form onSubmit={sendEmail} >
+            {loading &&
+            <LoadingSpinnerWrapper>
+                <LoadingSpinnerContainer>
+                    <LoadingSpinner style={{position:'relative'}}/>
+                </LoadingSpinnerContainer>
+                </LoadingSpinnerWrapper>
+            }
+            {form && <>
                 <Form.Group>
                     <Form.Label>Name</Form.Label>
                     <Form.Control onChange={(e) => setName(e.target.value)} value={name} name='name'/>
@@ -42,6 +56,8 @@ const ContactUs = () => {
                 </Form.Group>
                 </Form.Group>
                 <Button type='submit' style={{float:'right'}} variant='outline-secondary'>Submit</Button>
+            </>
+            }
             </Form>
          </FormContainer> 
          </FormWrapper>
