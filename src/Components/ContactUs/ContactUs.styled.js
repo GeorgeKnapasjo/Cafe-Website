@@ -22,6 +22,7 @@ flex-direction:column;
 margin:auto;
 width:50vw;
 max-width:700px;
+
 Form{
     padding:1rem;
     height:436px;
@@ -30,7 +31,18 @@ Form{
     margin-bottom:10rem;
     background: ${props => props.disabled ? '#e9ecef' : 'white'};
 
+
 }
+// input{
+    // &:focus{
+    //     box-shadow: ${props => props.error ? '0px 0px 10px red' : ''};       
+    // }
+// }
+// textarea{
+//     &:focus{
+//         box-shadow:${props => props.error ? '0px 0px 10px red' : ''};      
+//     }
+// }
 `;
 
 export const LoadingSpinnerWrapper = styled.div`
