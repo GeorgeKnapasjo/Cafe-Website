@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FormContainer, FormWrapper, LoadingSpinnerContainer, LoadingSpinnerWrapper } from './ContactUs.styled';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Alert } from 'react-bootstrap';
 import emailJs from 'emailjs-com';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
@@ -10,6 +10,7 @@ const ContactUs = () => {
     const [email, setEmail] = useState('');
     const [loading, setLoading] = useState(false);
     const [form, setForm] = useState(true);
+    const [success, setSuccess] = useState(false)
     // const [nameError, setNameError] = useState(false);
     // const [emailError, setEmailError] = useState(false);
     // const [messageError, setMessageError] = useState(false);
@@ -50,6 +51,7 @@ const ContactUs = () => {
                 setMessage('');
                 setForm(false);
                 setLoading(false);
+                setSuccess(true);
             }, (error) => {
                 console.log('failed', error)
             });
@@ -85,6 +87,12 @@ const ContactUs = () => {
                             </Form.Group>
                         </Form.Group>
                         <Button type='submit' style={{ float: 'right' }} variant='outline-secondary'>Submit</Button>
+                    </>
+                    }
+                    {success &&
+                    <>
+                        <Alert variant='success'><Alert.Heading>Success</Alert.Heading>We have recieved your email and will get back to you as soon as we can!</Alert>
+                        <p>Alternatively you can call us on: <a>9500 0000</a></p>
                     </>
                     }
                 </Form>
