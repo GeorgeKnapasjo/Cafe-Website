@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormContainer, FormWrapper, LoadingSpinnerContainer, LoadingSpinnerWrapper } from './ContactUs.styled';
+import { FormContainer, FormWrapper, LoadingSpinnerContainer, LoadingSpinnerWrapper, SuccessWrapper } from './ContactUs.styled';
 import { Button, Form, Alert } from 'react-bootstrap';
 import emailJs from 'emailjs-com';
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
@@ -90,10 +90,13 @@ const ContactUs = () => {
                     </>
                     }
                     {success &&
-                    <>
+                    <SuccessWrapper>
                         <Alert variant='success'><Alert.Heading>Success</Alert.Heading>We have recieved your email and will get back to you as soon as we can!</Alert>
-                        <p>Alternatively you can call us on: <a>9500 0000</a></p>
-                    </>
+                        <h3>Alternatively</h3>
+                        <p style={{paddingTop:'1rem'}}>If it is urgent, You can call us on: <a> 9500 0000</a></p>
+                        <p>Or visit use 1/471 Marrickville Rd, Dulwich Hill NSW 2203</p>
+                        <p>Thanks for contacting us!</p>
+                    </SuccessWrapper>
                     }
                 </Form>
             </FormContainer>

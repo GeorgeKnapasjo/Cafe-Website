@@ -61,3 +61,14 @@ export const LoadingSpinnerContainer = styled.div`
     z-index:10;
     position:relative;
 `;
+
+export const SuccessWrapper = styled.div`
+    h3{
+        padding-left:0.5rem;
+        padding-top:1rem;
+    }
+    p{
+        padding-left:0.5rem;
+        padding-top:0.5rem;
+    }
+`;

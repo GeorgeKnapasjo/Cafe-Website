@@ -2,10 +2,9 @@ import styled from 'styled-components/macro';
 
 export const AboutUsWrapper = styled.div`
     display:flex;
-    margin-top:5rem;
     width:75vw;
     margin:auto;
-    margin-top:10rem;
+    margin-top:5rem;
 `;
 
 export const AboutUsContainer = styled.div`
@@ -20,5 +19,4 @@ export const AboutUsContainer = styled.div`
         line-height:2.5;
         max-width:1000px;
     }
-
 `;

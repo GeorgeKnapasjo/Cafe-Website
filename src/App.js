@@ -13,8 +13,8 @@ function App() {
     <div>
       <NavBar/>
       <Banner/>
-      <Menu/>
       <AboutUs/>
+      <Menu/>
       <ContactUs/>
     </div> 
   ); 
