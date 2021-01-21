@@ -1,12 +1,13 @@
 import styled from 'styled-components/macro';
 
 export const MenuWrapper = styled.div`
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Raleway', sans-serif;
     display:flex;
 `;
 
 export const MenuContainer = styled.div`
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    border: 1px solid #242934;
     margin:auto;
     margin-top:3rem;
     display:flex;
@@ -14,11 +15,17 @@ export const MenuContainer = styled.div`
     flex-wrap:wrap;
     width:70vw;
     h1{
-        width:100vw;
+        color:#242934;
+        width:15vw;
+        height:6vw;
         text-align:center;
-        margin-top:2rem;
-        margin-bottom:4rem;
+        margin-bottom:0;
+        margin-top:-1.5rem;
+        background-color:white;
+        z-index:10;
+        margin-bottom:2rem;
     }
+    padding: 0 2rem 2rem 2rem;
 `;
 
 export const MenuItem = styled.div`

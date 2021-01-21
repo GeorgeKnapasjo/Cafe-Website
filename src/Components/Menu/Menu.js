@@ -29,6 +29,7 @@ const Menu = () => {
         <MenuWrapper>
             <MenuContainer>
                 <h1>Menu</h1>
+                <MenuItem/>
                 <MenuItem onClick={() => stateSetter('breakfast')}>
                     <h2>Breakfast</h2>
                     <p>Eggs on Toast</p>
