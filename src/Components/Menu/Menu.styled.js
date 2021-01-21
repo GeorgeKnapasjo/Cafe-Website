@@ -9,7 +9,7 @@ export const MenuWrapper = styled.div`
 export const MenuContainer = styled.div`
     border: 1px solid #242934;
     margin:auto;
-    margin-top:3rem;
+    margin-top:8rem;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -68,3 +68,9 @@ export const MenuItem = styled.div`
     }
 `;
 
+export const Spacer = styled.div`
+    width:15vw;
+    margin-left:auto;
+    margin-right:auto;
+
+`;

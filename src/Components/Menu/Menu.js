@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { MenuContainer, MenuItem, MenuWrapper } from './Menu.styled';
+import { MenuContainer, MenuItem, MenuWrapper, Spacer } from './Menu.styled';
 
 const Menu = () => {
     const [fullBreakfastMenu, setFullBreakfastMenu] = useState(false);
@@ -26,10 +26,11 @@ const Menu = () => {
     }
 
     return (
-        <MenuWrapper>
-            <MenuContainer>
+        <MenuWrapper >
+            <MenuContainer >
+                <Spacer/>
                 <h1>Menu</h1>
-                <MenuItem/>
+                <Spacer/>
                 <MenuItem onClick={() => stateSetter('breakfast')}>
                     <h2>Breakfast</h2>
                     <p>Eggs on Toast</p>
