@@ -4,6 +4,7 @@ export const MenuWrapper = styled.div`
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Raleway', sans-serif;
     display:flex;
+
 `;
 
 export const MenuContainer = styled.div`
@@ -24,8 +25,12 @@ export const MenuContainer = styled.div`
         background-color:white;
         z-index:10;
         margin-bottom:2rem;
+        min-width:max-content;
     }
     padding: 0 2rem 2rem 2rem;
+    @media(max-width:700px){
+        flex-flow:column;
+    }
 `;
 
 export const MenuItem = styled.div`
