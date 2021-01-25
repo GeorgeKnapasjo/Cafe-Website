@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro';
-import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
 export const FormWrapper = styled.div`
     width:75vw;

@@ -22,6 +22,8 @@ const Menu = () => {
             case 'snacks':
                 fullSnackMenu ? setFullSnackMenu(false) : setFullSnackMenu(true)
                 break;
+            default:
+                break;
         }
     }
 

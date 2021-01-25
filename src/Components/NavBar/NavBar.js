@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MenuBarContainer, MenuOptionsContainer, MenuBar, NavBarContainer, CompanyLogo, TestDiv, MenuOption } from './NavBar.styled';
+import { MenuBarContainer, MenuOptionsContainer, MenuBar, NavBarContainer, CompanyLogo, MenuOption } from './NavBar.styled';
 
 const NavBar = () => {
     const [menuClicked, setMenuClicked] = useState(false);

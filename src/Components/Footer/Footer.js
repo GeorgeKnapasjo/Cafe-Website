@@ -16,10 +16,10 @@ const Footer = () => {
             </FooterSection>
             <FooterSection>
                 <h3>Menu</h3>
-                <a>Breakfast</a>
-                <a>Lunch</a>
-                <a>Beverages</a>
-                <a>Snacks</a>
+                <a href='/'>Breakfast</a>
+                <a href='/'>Lunch</a>
+                <a href='/'>Beverages</a>
+                <a href='/'>Snacks</a>
             </FooterSection>
             <FooterSection>
                 <h3>Socials</h3>

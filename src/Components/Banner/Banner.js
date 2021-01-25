@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <BannerWrapper>
             <BannerImageContainer>
-                <img src={test} />
+                <img src={test} alt='Cafe'/>
             </BannerImageContainer>
          </BannerWrapper> 
     )

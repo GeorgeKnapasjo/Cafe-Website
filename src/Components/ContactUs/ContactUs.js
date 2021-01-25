@@ -93,7 +93,7 @@ const ContactUs = () => {
                     <SuccessWrapper>
                         <Alert variant='success'><Alert.Heading>Success</Alert.Heading>We have recieved your email and will get back to you as soon as we can!</Alert>
                         <h3>Alternatively</h3>
-                        <p style={{paddingTop:'1rem'}}>If it is urgent, You can call us on: <a> 9500 0000</a></p>
+                        <p style={{paddingTop:'1rem'}}>If it is urgent, You can call us on: <a href='/'> 9500 0000</a></p>
                         <p>Or visit use 1/471 Marrickville Rd, Dulwich Hill NSW 2203</p>
                         <p>Thanks for contacting us!</p>
                     </SuccessWrapper>
