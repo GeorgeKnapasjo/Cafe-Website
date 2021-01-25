@@ -5,10 +5,11 @@ export const AboutUsWrapper = styled.div`
     width:75vw;
     margin:auto;
     margin-top:5rem;
+    min-height:19vw;
 `;
 
 export const AboutUsContainer = styled.div`
-    margin:auto;
+    margin: 5rem auto 5rem auto;
     text-align:center;
     font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Raleway', sans-serif;

@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Menu from './Components/Menu/Menu';
 import AboutUs from './Components/AboutUs/AboutUs';
 import ContactUs from './Components/ContactUs/ContactUs';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <AboutUs/>
       <Menu/>
       <ContactUs/>
+      <Footer/>
     </div> 
   ); 
 }
